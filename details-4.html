@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang Order</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="onPageLoading()">
+        <div class="wrapper">
+            <header>
+                <div class="banner">
+                    <h1>Chi's Cake</h1>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="parent active"><a href="#">Product</a>
+                            <ol>
+                                <li><a href="details-1.html">Classic Yellow Cake</a></li>
+                                <li><a href="details-2.html">Coconut bundt Cake</a></li>
+                                <li><a href="details-3.html">Cream Cheese Pound Cake</a></li>
+                                <li><a href="details-4.html">German Chocolate Cake</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>  
+                <nav class="mobile" onclick="onNavMenuClick()">
+                    <i class="fas fa-bars"></i>
+                </nav>          
+            </header>
+            <main>
+                <article>
+                    <span>05/Jan</span>
+                    <h4>German Chocolate Cake</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam lacinia lorem id sagittis. Mauris malesuada ultricies scelerisque. Vivamus in ultrices augue, id bibendum tortor.</p>
+                    <img src="images/german-chocolate-cake.jpg" alt="german-chocolate-cake"/>
+                    <p>Nunc volutpat ullamcorper massa quis elementum. Pellentesque eu iaculis urna. Mauris viverra elit id magna vehicula faucibus interdum ac libero. Phasellus est risus, consectetur vitae est ut, posuere imperdiet arcu. In ipsum nisi, congue imperdiet ante ac, dapibus tincidunt sem. Cras est est, dignissim sit amet semper sit amet, laoreet vitae mi. Nullam eros nisl, feugiat et risus vitae, convallis posuere ligula. Integer pharetra rhoncus malesuada. Praesent tempus mauris dolor. Integer vitae varius mauris. Aenean volutpat sollicitudin justo, vel aliquam ante imperdiet at.</p>
+                    
+                </article>       
+            </main>
+            <footer>
+                <p>© 2023 by Chi's Cake</p>
+            </footer>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="js/responsive.js"></script>

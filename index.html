@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi's Cake blog</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"  rel="stylesheet">
+
+</head>
+
+<body onload="onPageLoading()">
+    <div class="wrapper">
+        <header>
+            <div class="banner">
+                <h1>Chi's Cake</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="parent"><a href="#">Product</a>
+                        <ol>
+                            <li><a href="details-1.html">Classic Yellow Cake</a></li>
+                            <li><a href="details-2.html">Coconut bundt Cake</a></li>
+                            <li><a href="details-3.html">Cream Cheese Pound Cake</a></li>
+                            <li><a href="details-4.html">German Chocolate Cake</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>  
+            <nav class="mobile" onclick="onNavMenuClick()">
+                <i class="fas fa-bars"></i>
+            </nav>      
+        </header>
+        <main>
+            <article>
+                <span>05/Jan</span>
+                <h3>Classic Yellow Cake With Chocolate Frosting</h3>
+                <img src="images/yellow-cake-chocolate-frosting.jpg" alt="yellow-cake-chocolate-frosting" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam lacinia lorem id sagittis. Mauris
+                    malesuada ultricies scelerisque. Vivamus in ultrices augue, id bibendum tortor.</p>
+                <a href="details-1.html">Read more</a>
+            </article>
+            <article>
+                <span>07/Jan</span>
+                <h3>Coconut Bundt Cake With Chocolate-Coconut Glaze</h3>
+                <img src="images/coconut-bundt-cake.jpg" alt="coconut-bundt-cake" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam lacinia lorem id sagittis. Mauris
+                    malesuada ultricies scelerisque. Vivamus in ultrices augue, id bibendum tortor.</p>
+                <a href="details-2.html">Read more</a>
+            </article>
+            <article>
+                <span>01/Feb</span>
+                <h3>Cream Cheese Pound Cake</h3>
+                <img src="images/cream-cheese-pound-cake.jpg" alt="cream-cheese-pound-cake" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam lacinia lorem id sagittis. Mauris
+                    malesuada ultricies scelerisque. Vivamus in ultrices augue, id bibendum tortor.</p>
+                <a href="details-3.html">Read more</a>
+            </article>
+            <article>
+                <span>12/Feb</span>
+                <h3>German Chocolate Cake</h3>
+                <img src="images/german-chocolate-cake.jpg" alt="german-chocolate-cake" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam lacinia lorem id sagittis. Mauris
+                    malesuada ultricies scelerisque. Vivamus in ultrices augue, id bibendum tortor.</p>
+                <a href="details-4.html">Read more</a>
+            </article>
+        </main>
+        <footer>
+            <p>© 2023 by Chi's Cake</p>
+        </footer>
+    </div>    
+</body>
+
+</html>
+<script type="text/javascript" src="js/responsive.js"></script>

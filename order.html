@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Order</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onPageLoading()">
+    <div class="wrapper">
+        <header>
+            <div class="banner">
+                <h1>Chi's Cake</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="parent"><a href="#">Product</a>
+                        <ol>
+                            <li><a href="details-1.html">Classic Yellow Cake</a></li>
+                            <li><a href="details-2.html">Coconut bundt Cake</a></li>
+                            <li><a href="details-3.html">Cream Cheese Pound Cake</a></li>
+                            <li><a href="details-4.html">German Chocolate Cake</a></li>
+                        </ol>
+                    </li>
+                    <li class="active"><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>  
+            <nav class="mobile" onclick="onNavMenuClick()">
+                <i class="fas fa-bars"></i>
+            </nav>      
+        </header>
+        <main>
+            <h2 class="heading">Order now</h2>
+            <form class="form">
+                <div class="form-control">
+                    <label for="cake-name">Cake name:</label>
+                    <div class="inp-wrapper">
+                        <select id="cake-name">
+                            <option value="">--- Select cake ---</option>
+                            <option value="1">Classic Yellow Cake</option>
+                            <option value="2">Coconut Bundt Cake</option>
+                            <option value="3">Cream Cheese Pound Cake</option>
+                            <option value="4">German Chocolate Cake</option>                            
+                        </select>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="name">Your name:</label>
+                    <div class="inp-wrapper">
+                        <input type="text" name="name" id="name" placeholder="Please enter your email" required
+                            maxlength="100" />
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="message">Message:</label>
+                    <div class="inp-wrapper">
+                        <textarea name="message" id="message" maxlength="30"></textarea>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label>Include:</label>
+                    <div class="inp-wrapper">
+                        <div class="chk-item">
+                            <input type="checkbox" id="candle" name="include" value="candle" /><label for="candle">Candle</label>
+                        </div>
+                        <div class="chk-item">
+                            <input type="checkbox" id="firework" name="include" value="firework" /><label for="firework">Firework</label>
+                        </div>
+                        <div class="chk-item">
+                            <input type="checkbox" id="toys" name="include" value="toys" /><label for="toys">Toys</label>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="deliver-date">Deliver date:</label>
+                    <div class="inp-wrapper">
+                        <input type="date" name="deliver-date" id="deliver-date" required placeholder="mm/dd/yyyy" />                 
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="deliver-to">Deliver to:</label>
+                    <div class="inp-wrapper">
+                        <textarea name="deliver-to" id="deliver-to" required maxlength="500"></textarea>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label >Call before deliver?</label>
+                    <div class="inp-wrapper radio">
+                        <div class="rdo-item">
+                            <input type="radio" name="call-before" value="1" id="yes"><label for="yes">Yes</label>
+                        </div>
+                        <div class="rdo-item">
+                            <input type="radio" name="call-before" value="0" id="no" checked><label for="no">No</label>
+                        </div>                            
+                    </div>
+                </div>
+                <input type="button" id="btn-send" value="Order now" onclick="onBtnOrderClick()" />
+                <p id="message-success" style="display:none;">Dữ liệu kiểm tra đã hợp lệ!</p>
+            </form>
+        </main>
+        <footer>
+            <p>© 2023 by Chi's Cake</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/order.js"></script>
+<script type="text/javascript" src="js/responsive.js"></script>
